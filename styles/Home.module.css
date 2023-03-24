@@ -34,11 +34,6 @@
   border-radius: var(--border-radius);
 }
 
-.code {
-  font-weight: 400;
-  font-family: var(--font-mono);
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
@@ -113,10 +108,10 @@
   display:flex;
   justify-content:center;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   padding: 5px 5px;
-  margin-left: 16px;
+  margin-left: 10px;
   transform: translateZ(0);
   border-radius: 50%;
   overflow:hidden;

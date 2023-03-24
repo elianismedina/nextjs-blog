@@ -30,21 +30,21 @@ export default function Home() {
           </Link>
           
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
+            <Link
+              href=" "
+              target="_top"
               rel="noopener noreferrer"
+              className={styles.vercelLogo}
             >
               By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={200}
-                height={48}
+                width={50}
+                height={45}
                 priority
               />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
             src="/next.png"
             alt="Next.js Logo"
             width={300}
-            height={300}
+            height={200}
             priority
           />
 
@@ -62,8 +62,8 @@ export default function Home() {
             <Image
               src="/thirteen.jpg"
               alt="13"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
               priority
             />
           </div>
@@ -77,7 +77,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Contact <span>-&gt;</span>
+              Contact<span role="img" aria-label="cellphone">📱</span> <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check my number, email adress and other contact information.
@@ -90,7 +90,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Education <span>-&gt;</span>
+              Education <span role="img" aria-label="education">🎓</span><span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check my studies and educational background.
@@ -103,7 +103,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Work experience <span>-&gt;</span>
+              Work experience <span role="img" aria-label="work">👩‍🔧</span><span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check the companies I have worked for in the past and my job
@@ -118,7 +118,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Skills <span>-&gt;</span>
+              Skills <span role="img" aria-label="skilss">🧩</span><span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check the skills I have adquired during my work life.

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import useDownloader from "react-use-downloader";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,18 +18,16 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <a
-            download="public/addRequestMeta.pdf"
-            href="public/resume.pdf"
+          <Link
+            href="https://drive.google.com/file/d/1TD7Pg6bel9TLiqICkGoL2EXiiMjdiKtt/view?usp=share_link"
             alt="resume"
             target="_blank"
             rel="noopener noreferrer"
           >
             <p>
-              Get started by checking&nbsp;
-              <code className={styles.code}>my resume</code>
+              Here you can download my resume in PDF
             </p>
-          </a>
+          </Link>
           
           <div>
             <a

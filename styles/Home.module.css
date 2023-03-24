@@ -35,7 +35,7 @@
 }
 
 .code {
-  font-weight: 700;
+  font-weight: 400;
   font-family: var(--font-mono);
 }
 
@@ -73,11 +73,11 @@
 }
 
 .center {
-  display: flex;
+  display:grid;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 2rem 0;
+  align-items:center;
+  position:relative;
+  padding: 1rem 0;
 }
 
 .center::before {
@@ -110,8 +110,8 @@
 }
 
 .thirteen {
-  display: flex;
-  justify-content: center;
+  display:flex;
+  justify-content:center;
   align-items: center;
   width: 300px;
   height: 300px;

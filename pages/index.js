@@ -41,7 +41,7 @@ export default function Home() {
                 src="/vercel.svg"
                 alt="Vercel Logo"
                 width={50}
-                height={45}
+                height={50}
                 priority
               />
             </Link>

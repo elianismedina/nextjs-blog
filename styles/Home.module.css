@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem;
+  padding: 5rem;
   min-height: 100vh;
 }
 
@@ -83,8 +83,8 @@
 .center::before {
   background: var(--secondary-glow);
   border-radius: 50%;
-  width: 480px;
-  height: 360px;
+  width: 240px;
+  height: 180px;
   margin-left: -400px;
 }
 
@@ -106,7 +106,7 @@
 
 .logo,
 .thirteen {
-  position: relative;
+  position:relative;
 }
 
 .thirteen {
@@ -115,19 +115,19 @@
   align-items: center;
   width: 300px;
   height: 300px;
-  padding: 25px 10px;
+  padding: 5px 5px;
   margin-left: 16px;
   transform: translateZ(0);
   border-radius: 50%;
-  overflow: hidden;
+  overflow:hidden;
   box-shadow: 0px 2px 8px -1px #0000001a;
 }
 
 .thirteen::before,
 .thirteen::after {
   content: '';
-  position: absolute;
-  z-index: -1;
+  position:relative;
+  z-index:-1;
 }
 
 /* Conic Gradient Animation */

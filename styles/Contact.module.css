@@ -1,0 +1,58 @@
+.title {
+  font-size: 2rem;
+  color:#0b2839fa;
+  text-align: center;
+  padding: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(30%, auto));
+  width: auto;
+  max-width: 100%;
+}
+.card {
+  padding: 3.5rem 3.5rem;
+  border-radius: var(--border-radius);
+  background: rgba(var(--card-rgb), 0);
+  border: 1px solid rgba(var(--card-border-rgb), 0);
+  transition: background 200ms, border 200ms;
+}
+
+.card span {
+  display: inline-block;
+  transition: transform 200ms;
+}
+
+.card h2 {
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.card p {
+  margin: 0;
+  opacity: 1;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 30ch;
+}
+.card a {
+  margin: 0;
+  opacity: 1;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 30ch;
+}
+.backbutton {
+  margin: 0;
+  opacity: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 30ch;
+  background-color: #0b2839fa;
+  color: white;
+  border-radius: 5px;
+  
+}
+
+
+

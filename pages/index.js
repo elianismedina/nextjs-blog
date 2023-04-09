@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+import { Alumni_Sans_Collegiate_One, Inter, Nanum_Pen_Script, Noto_Sans_Psalter_Pahlavi } from "next/font/google";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -80,7 +82,7 @@ export default function Home() {
               Contact<span role="img" aria-label="cellphone">📱</span> <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Check my number, email adress and other contact information.
+              Check my number, email address and other contact information.
             </p>
           </Link>
           <Link
@@ -118,10 +120,10 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Skills <span role="img" aria-label="skilss">🧩</span><span>-&gt;</span>
+              Skills <span role="img" aria-label="skills">🧩</span><span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Check the skills I have adquired during my work life.
+              Check the skills I have acquired during my work life.
             </p>
           </Link>
         </div>
@@ -129,3 +131,4 @@ export default function Home() {
     </>
   );
 }
+

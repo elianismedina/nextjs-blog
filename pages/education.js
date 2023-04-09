@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Eduaction() {
+export default function Education() {
   return (
     <>
       <h1>My education</h1>

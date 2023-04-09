@@ -53,6 +53,18 @@
   border-radius: 5px;
   
 }
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    max-width: 320px;
+    text-align: center;
+  }
 
+  .card {
+    padding: 1rem 2.5rem;
+  }
 
-
+  .card h2 {
+    margin-bottom: 0.5rem;
+  }

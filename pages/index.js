@@ -1,11 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Alumni_Sans_Collegiate_One, Inter, Nanum_Pen_Script, Noto_Sans_Psalter_Pahlavi } from "next/font/google";
+import {
+  Alumni_Sans_Collegiate_One,
+  Inter,
+  Nanum_Pen_Script,
+  Noto_Sans_Psalter_Pahlavi,
+} from "next/font/google";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-
-
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,11 +28,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>
-              Here you can download my resume in PDF
-            </p>
+            <div className={styles.pdf}>
+              <p>Here you can download my resume in PDF</p>
+            </div>
           </Link>
-          
+
           <div>
             <Link
               href=" "
@@ -79,7 +81,11 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Contact<span role="img" aria-label="cellphone">📱</span> <span>-&gt;</span>
+              Contact
+              <span role="img" aria-label="cellphone">
+                📱
+              </span>{" "}
+              <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check my number, email address and other contact information.
@@ -92,7 +98,11 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Education <span role="img" aria-label="education">🎓</span><span>-&gt;</span>
+              Education{" "}
+              <span role="img" aria-label="education">
+                🎓
+              </span>
+              <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check my studies and educational background.
@@ -105,7 +115,11 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Work experience <span role="img" aria-label="work">👩‍🔧</span><span>-&gt;</span>
+              Work experience{" "}
+              <span role="img" aria-label="work">
+                👩‍🔧
+              </span>
+              <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check the companies I have worked for in the past and my job
@@ -120,7 +134,11 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
-              Skills <span role="img" aria-label="skills">🧩</span><span>-&gt;</span>
+              Skills{" "}
+              <span role="img" aria-label="skills">
+                🧩
+              </span>
+              <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               Check the skills I have acquired during my work life.
@@ -131,4 +149,3 @@ export default function Home() {
     </>
   );
 }
-

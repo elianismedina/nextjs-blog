@@ -3,19 +3,20 @@
   color:#0b2839fa;
   text-align: center;
   padding: 2rem;
+  margin: 0;
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(30%, auto));
   width: auto;
   max-width: 100%;
+  padding: auto;
+  margin: 0;
+  text-align: center;
 }
 .card {
   padding: 3.5rem 3.5rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+  margin: auto;
 }
 
 .card span {
@@ -43,16 +44,43 @@
   max-width: 30ch;
 }
 .backbutton {
-  margin: 0;
-  opacity: 1;
   font-size: 1rem;
-  line-height: 1.5;
-  max-width: 30ch;
-  background-color: #0b2839fa;
-  color: white;
-  border-radius: 5px;
-  
+  padding: 0.5rem 1rem;
+  display: inline-flexbox;
+  border-radius: 5%;
+  background-color: rgb(247, 195, 100);
+  outline: 1px solid #0b2839fa;
+  transition-property: 
+    outline-offset,outline-color,background-color;
+  transition-duration: 0.25s;
 }
+.backbutton:hover {
+  outline-offset: 4px;
+  background-color: rgb(247, 195, 100);
+  outline-color: #0b2839fa;
+  color: #fff;
+}
+.backbutton i {
+  margin: auto;
+}
+.backbutton:hover i{
+  animation: shake 0.25s;
+}
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
 @media (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;

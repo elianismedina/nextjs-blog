@@ -11,11 +11,15 @@
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
   font-family: var(--font-mono);
+  color: var(--secondary);
+  text-align: center;
 }
 
 .description a {
@@ -29,9 +33,42 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
+  background-color: rgb(247, 195, 100);
+  opacity: 0.8;
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+}
+.pdf {
+  outline: 1px solid #0b2839fa;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+  border-radius: 11px;
+}
+.pdf:hover {
+  outline-offset: 4px;
+  background-color: rgb(247, 195, 100);
+  outline-color: #0b2839fa;
+  color: #fff;
+}
+.pdf i {
+  margin: auto;
+}
+.pdf:hover i {
+  animation: shake 0.25s;
+}
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
 }
 
 .grid {
@@ -68,10 +105,10 @@
 }
 
 .center {
-  display:grid;
+  display: grid;
   justify-content: center;
-  align-items:center;
-  position:relative;
+  align-items: center;
+  position: relative;
   padding: 1rem 0;
 }
 
@@ -92,7 +129,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -101,12 +138,12 @@
 
 .logo,
 .thirteen {
-  position:relative;
+  position: relative;
 }
 
 .thirteen {
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   align-items: center;
   width: 250px;
   height: 250px;
@@ -114,15 +151,15 @@
   margin-left: 10px;
   transform: translateZ(0);
   border-radius: 50%;
-  overflow:hidden;
+  overflow: hidden;
   box-shadow: 0px 2px 8px -1px #0000001a;
 }
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
-  position:relative;
-  z-index:-1;
+  content: "";
+  position: relative;
+  z-index: -1;
 }
 
 /* Conic Gradient Animation */
